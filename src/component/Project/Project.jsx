@@ -1,7 +1,7 @@
-import img1 from "../../assets/yt.png";
-import img2 from "../../assets/shopping.png";
-import img3 from "../../assets/bookstore.png";
-import img4 from "../../assets/shofy.png";
+import img2 from "../../assets/chatapp.PNG";
+import img1 from "../../assets/neptour.PNG";
+import img3 from "../../assets/bookstore.PNG";
+import img4 from "../../assets/sathishare.PNG";
 
 import { motion } from "framer-motion";
 import Container from "../Container/Container";
@@ -11,32 +11,32 @@ const Project = () => {
   const project = [
     {
       img: img1,
-      title: "E-Commerce-Smartyt",
-      tech: ["Next.js", "TypeScript", "Redux", "Next Auth"],
-      liveLink: "https://e-commarce-smartyt.vercel.app",
-      githubLink: "https://github.com/yeasinmiah1272001/e-commarceSmartyt",
+      title: "NepTour",
+      tech: ["Node.js", "React.js", "sql", "Express"],
+      liveLink: "https://Neptour",
+      githubLink: "https://github.com/aashisrjl/NepTour",
     },
     {
       img: img2,
-      title: "E-Commerce-Shopping",
-      tech: ["Next.js", "REST API", "Redux", "Next Auth"],
-      liveLink: "https://eid-shopping.vercel.app",
-      githubLink: "https://github.com/yeasinmiah1272001/eid-shopping",
+      title: "Chatting Web App",
+      tech: ["Node.js", "socket", "sql", "React"],
+      liveLink: "https://github.com/aashisrjl/frontend_chat_socket_io",
+      githubLink: "https://github.com/aashisrjl/backend_chat_socket_io",
     },
     {
       img: img4,
-      title: "E-Commarce-Shofy",
-      tech: ["Next js", "Redux", "Next Auth"],
-      liveLink: "https://shofyproject.vercel.app",
-      githubLink: "https://github.com/yeasinmiah1272001/shofy-practice-main",
+      title: "SathiShare",
+      tech: ["Node js", "EJS", "Express"],
+      liveLink: "https://sathishare.onrender.com",
+      githubLink: "https://github.com/aashisrjl/sathiShare",
     },
     {
       img: img3,
-      title: "Book Store",
-      tech: ["React.js", "Mongodb", "Firebase", "Express"],
-      liveLink: "https://book-client-five.vercel.app/",
+      title: "Ecommerce-backend",
+      tech: ["Node js", "sql", "Express", "Postman"],
+      liveLink: "https://bookStore/",
       githubLink:
-        "https://github.com/yeasinmiah1272001/backend/tree/main/Book-store",
+        "https://github.com/aashisrjl/project2Eco-mern-backend",
     },
   ];
 

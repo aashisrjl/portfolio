@@ -9,89 +9,75 @@ const OthersProjectCard = () => {
 
   const projects = [
     {
-      title: "Todo",
+      title: "PortFolio management",
       description:
-        "With supporting text below as a natural lead-in to additional content.",
-      tech: ["Next js", "Redux"],
-      link: "https://todo-form-ten.vercel.app",
+        "can create a new portfolio of new user by filling the form",
+      tech: ["js","html/css", "php","sql"],
+      link: "https://github.com/aashisrjl/portfolio-management",
     },
     {
-      title: "Car-Doctor",
+      title: "Car Website",
       description:
-        "With supporting text below as a natural lead-in to additional content.",
-      tech: ["React.js", "Mongodb", "Node.js", "Firebase"],
-      link: "https://car-doctor-practice-9032d.web.app/",
+        "backend of car website, admin portion of the real project",
+      tech: ["React.js", "Mongodb", "Node.js", "Express"],
+      link: "https://github.com/aashisrjl/car",
     },
     {
-      title: "job-Portal",
+      title: "Organizations(multitenant)",
       description:
-        "With supporting text below as a natural lead-in to additional content.",
-      tech: ["React.js", "Mongodb", "Node.js", "Firebase"],
-      link: "https://vast-science.surge.sh/",
+        "creating new organization for new user with multitinent architecture",
+      tech: ["ejs", "mySql", "Node.js", "Express"],
+      link: "https://github.com/aashisrjl/multitenant_node",
     },
     {
-      title: "Doctor-AppointMent",
+      title: "Blog Management",
       description:
-        "With supporting text below as a natural lead-in to additional content.",
-      tech: ["React.js", "Mongodb", "Node.js", "Firebase"],
-      link: "https://medisure-healthcare.web.app/",
+        "Blog management of user with all necessary operation  ",
+      tech: ["ejs", "mySql", "Node.js", "jwt"],
+      link: "https://github.com/aashisrjl/node_BLOG",
     },
     {
-      title: "Travel-Agency",
+      title: "Ecommerce-backend",
       description:
-        "With supporting text below as a natural lead-in to additional content.",
-      tech: ["React.js", "Mongodb", "Node.js", "Firebase"],
-      link: "https://festive-vacation.surge.sh/",
+        "all e-commerce apis and payment integration with authentication using jwt ",
+      tech: ["Express", "MySql", "Node.js", "postman"],
+      link: "https://github.com/aashisrjl/project2Eco-mern-backend",
     },
     {
-      title: "Match-Box",
+      title: "Programming Jokes",
       description:
-        "With supporting text below as a natural lead-in to additional content.",
-      tech: ["React.js", "Mongodb", "Node.js", "Firebase"],
-      link: "https://thundering-competition.surge.sh/",
+        "generate random programming jokes using free apis ",
+      tech: ["React.js", "Mongodb", "Node.js", "localstorage"],
+      link: "https://github.com/aashisrjl/programming-jokes",
     },
     {
-      title: "Home-Repaire",
+      title: "Quote-Generator",
       description:
-        "With supporting text below as a natural lead-in to additional content.",
+        "generate random quotes using  using free apis ",
       tech: ["React.js", "Mongodb", "Node.js", "Firebase"],
-      link: "https://assinment-11-44acd.web.app/",
+      link: "https://github.com/aashisrjl/quotegenerator",
     },
     {
-      title: "Birthday-Celebration",
+      title: "QR generator",
       description:
         "With supporting text below as a natural lead-in to additional content.",
-      tech: ["React.js", "Mongodb", "Node.js", "Firebase"],
-      link: "https://assinment9.web.app/",
+      tech: ["js", "css", "html"],
+      link: "https://github.com/aashisrjl/Qr-generator",
     },
     {
-      title: "Car-Doctor",
+      title: "TO-DO",
       description:
         "With supporting text below as a natural lead-in to additional content.",
-      tech: ["React.js", "Mongodb", "Node.js", "Firebase"],
-      link: "https://car-doctor-practice-9032d.web.app/",
+      tech: ["js", "localstorage", "css", "html"],
+      link: "https://github.com/aashisrjl/todo",
     },
     {
-      title: "Car-Doctor",
+      title: "weather",
       description:
         "With supporting text below as a natural lead-in to additional content.",
-      tech: ["React.js", "Mongodb", "Node.js", "Firebase"],
-      link: "https://car-doctor-practice-9032d.web.app/",
-    },
-    {
-      title: "Car-Doctor",
-      description:
-        "With supporting text below as a natural lead-in to additional content.",
-      tech: ["React.js", "Mongodb", "Node.js", "Firebase"],
-      link: "https://car-doctor-practice-9032d.web.app/",
-    },
-    {
-      title: "Car-Doctor",
-      description:
-        "With supporting text below as a natural lead-in to additional content.",
-      tech: ["React.js", "Mongodb", "Node.js", "Firebase"],
-      link: "https://car-doctor-practice-9032d.web.app/",
-    },
+      tech: ["js", "css","html", "free api",],
+      link: "https://github.com/aashisrjl/weather",
+    }
     // Add more projects as needed
   ];
 
