@@ -12,7 +12,7 @@ const WhatNext = () => {
       </p>
       <div className="mt-2">
         <a
-          href="mailto:yeasinmiah1272001@gmail.com"
+          href="mailto:aashisrijal252@gmail.com"
           className="text-designColor border border-designColor px-6 py-2 rounded-md duration-300 hover:bg-slate-700 hover:text-white"
         >
           Say Hello
