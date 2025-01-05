@@ -9,12 +9,12 @@ import Home from "./component/Home/Home";
 
 const router = createBrowserRouter([
   {
-    path: "/portfolio/",
+    path: "/",
     element: <Root></Root>,
     errorElement: <Error></Error>,
     children: [
       {
-        path: "/portfolio/",
+        path: "/",
         element: <Home></Home>,
       },
     ],
