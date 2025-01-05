@@ -13,7 +13,7 @@ const Header = () => {
     { title: "Home", path: "Home", value: "" },
     { title: "About", path: "About", value: "01", delay: 0.1 },
     { title: "Skills", path: "Skills", value: "02", delay: 0.2 },
-    // { title: "Experience", path: "Experience", value: "03", delay: 0.3 },
+    //  { title: "Experience", path: "Experience", value: "03", delay: 0.3 },
     { title: "Project", path: "Project", value: "04", delay: 0.4 },
     { title: "Contact", path: "Contact", value: "05", delay: 0.5 },
   ];

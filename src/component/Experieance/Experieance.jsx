@@ -55,7 +55,7 @@ const Experieance = () => {
           <h1 className="text-2xl font-semibold text-lightColor mb-3">
             <span className="mr-2 text-designColor">02.</span> Where I have
             worked
-            <span className="text-gray-500"> ______________</span>
+            <span className="text-gray-500"> ____________</span>
           </h1>
         </div>
         <div className="w-full mt-10 lg:flex gap-8">

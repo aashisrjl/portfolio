@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../Container/Container";
 import { FaCode } from "react-icons/fa";
-import yeasin from "../../assets/bgimg.png";
+import aashis from "../../assets/bgimg.png";
 import { motion } from "framer-motion";
 
 const About = () => {
@@ -49,7 +49,7 @@ const About = () => {
         </div>
       </div>
       <motion.img
-        src={yeasin}
+        src={aashis}
         alt="Aashis Rijal"
         className="w-full md:w-96 rounded-full hover:rotate-[5deg] duration-300 hover:border-8 border-designColor hover:bg-cyan-300 shadow-2xl hover:shadow-designColor border-4"
         initial={{ opacity: 0, scale: 0.9 }}
