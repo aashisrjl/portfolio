@@ -5,7 +5,7 @@
   "type": "module",
   "homepage": "https://aashirjl.github.io/portfolio",
   "scripts": {
-     "predeploy": "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
@@ -36,10 +36,13 @@
     "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.17",
+    "babel-loader": "^9.2.1",
     "daisyui": "^4.6.0",
     "eslint": "^8.55.0",
     "eslint-plugin-react": "^7.33.2",
