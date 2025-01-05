@@ -1,6 +1,6 @@
 import img2 from "../../assets/chatapp.PNG";
 import img1 from "../../assets/neptour.PNG";
-import img3 from "../../assets/bookstore.PNG";
+import img3 from "../../assets/bookstore.png";
 import img4 from "../../assets/sathishare.PNG";
 
 import { motion } from "framer-motion";
