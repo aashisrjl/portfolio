@@ -7,6 +7,8 @@ import {
   SiMongodb,
   SiTailwindcss,
   SiVercel,
+  SiReact,
+  SiNextdotjs 
 } from "react-icons/si";
 import Typewriter from "typewriter-effect";
 import Container from "../Container/Container";
@@ -40,6 +42,8 @@ const SkillsCard = () => {
     { icon: FaNode, name: "Node JS", level: "85%" },
     { icon: SiExpress, name: "Express JS", level: "80%" },
     { icon: SiMongodb, name: "MongoDB", level: "85%" },
+    { icon: SiReact, name: "ReactNative", level: "60%" },
+    { icon: SiNextdotjs , name: "Next", level: "60%" },
   ];
 
   return (

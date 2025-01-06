@@ -27,6 +27,8 @@ const Skills = () => {
                 "MySql",
                 "NodeJS",
                 "ExpressJS",
+                "reactNative",
+                "NextJS",
                 "MongoDB",
                 "PostMan",
                 "Vercel",

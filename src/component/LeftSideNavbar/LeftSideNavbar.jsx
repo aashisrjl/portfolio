@@ -26,14 +26,11 @@ const LeftSideNavbar = () => {
   };
 
   const icons = [
-    {
-      icon: FaGithub,
-      link: "https://github.com/aashisrjl",
-    },
+    { icon: FaGithub,link: "https://github.com/aashisrjl",},
     { icon: FaFacebook, link: "https://www.facebook.com/aashis.rijal.92" },
-    { icon: FaYoutube, link: "/" },
-    { icon: FaLinkedin, link: "/" },
-    { icon: FaInstagram, link: "/" },
+    { icon: FaYoutube, link: "/https://www.youtube.com/@rule_the_life" },
+    { icon: FaLinkedin, link: "/https://www.linkedin.com/in/aashisrjl/" },
+    { icon: FaInstagram, link: "/https://www.instagram.com/aashisrjl/" },
   ];
 
   return (

@@ -52,7 +52,7 @@ const Project = () => {
           </motion.span>
           <motion.h1 className="text-xl">My Projects</motion.h1>
         </div>
-        <div className="grid md:grid-cols-4  lg:gap-32 gap-4 mb-4">
+        <div className="grid md:grid-cols-4 lg:gap-32 gap-4 mb-4 place-items-center sm:place-items-center sm:justify-center">
           {project.map((project, index) => (
             <motion.div
               key={index}

@@ -7,7 +7,7 @@ import RightSideNavbar from "../RightSideNavbar/RightSideNavbar";
 import img1 from "../../assets/about.png";
 
 const Banner = () => {
-  const stringValue = ["I build things for the web", "Backend Developer"];
+  const stringValue = ["Backend Developer","CSIT STUDENT","BUILD THINGS FOR WEB"];
 
   return (
     <div className="relative min-h-screen flex items-center">

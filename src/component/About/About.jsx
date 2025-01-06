@@ -44,7 +44,7 @@ const About = () => {
             <SkillItem text="Express.js" />
             <SkillItem text="Node.js" />
             <SkillItem text="MySql" />
-            <SkillItem text="GraphQL" />
+            <SkillItem text="Rest/Restful" />
           </div>
         </div>
       </div>
