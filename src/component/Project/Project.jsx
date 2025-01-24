@@ -2,6 +2,7 @@ import img2 from "../../assets/chatapp.PNG";
 import img1 from "../../assets/neptour.PNG";
 import img3 from "../../assets/bookstore.png";
 import img4 from "../../assets/sathishare.PNG";
+import img5 from "../../assets/grocery.png";
 
 import { motion } from "framer-motion";
 import Container from "../Container/Container";
@@ -35,9 +36,15 @@ const Project = () => {
       title: "Ecommerce-backend",
       tech: ["Node js", "sql", "Express", "Postman"],
       liveLink: "https://bookStore/",
-      githubLink:
-        "https://github.com/aashisrjl/project2Eco-mern-backend",
+      githubLink:"https://github.com/aashisrjl/project2Eco-mern-backend",
     },
+    {
+      img: img5,
+      title: "Nepali Grocery Store",
+      tech: ['Node js','mysql','Express','React'],
+      livelink:'https://groceryStore',
+      githubLink: 'https://github.com/aashisrjl/grocery_store'
+    }
   ];
 
   return (
