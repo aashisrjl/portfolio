@@ -5,6 +5,7 @@ import Typewriter from "typewriter-effect";
 import LeftSideNavbar from "../LeftSideNavbar/LeftSideNavbar";
 import RightSideNavbar from "../RightSideNavbar/RightSideNavbar";
 import img1 from "../../assets/about.png";
+import aashis from "../../assets/bgimg.png";
 
 const Banner = () => {
   const stringValue = ["Backend Developer","CSIT STUDENT","BUILD THINGS FOR WEB"];
@@ -81,11 +82,14 @@ const Banner = () => {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="flex justify-center items-center w-full lg:w-1/2 mt-8 lg:mt-0"
         >
-          <img
-            src={img1}
-            alt="About"
-            className="w-full max-w-sm lg:max-w-lg object-contain"
-          />
+           <motion.img
+                  src={aashis}
+                  alt="Aashis Rijal"
+                  className="w-full ml-15 md:w-96 rounded-full hover:rotate-[5deg] duration-300 hover:border-8 border-designColor hover:bg-cyan-300 shadow-2xl hover:shadow-designColor border-4"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.8, delay: 0.6 }}
+                />
         </motion.div>
       </Container>
       <RightSideNavbar />

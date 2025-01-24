@@ -9,8 +9,10 @@ const About = () => {
     <Container
       id={"About"}
       className={
-        "py-20 flex flex-col lg:px-0 md:px-24 md:flex-row items-start text-lg space-y-6 lg:mx-20"
+        " flex  py-24 justify-center align-center"
+        // 'py-20  mx-15 mb-24 flex flex-col lg:px-10 md:px-24 md:flex-row items-center justify-center text-lg space-y-6 lg:mx-20'
       }
+      
     >
       <div className="md:w-2/3 md:pr-8">
         <h1 className="text-xl lg:text-2xl font-semibold text-lightColor mb-3">
@@ -48,14 +50,9 @@ const About = () => {
           </div>
         </div>
       </div>
-      <motion.img
-        src={aashis}
-        alt="Aashis Rijal"
-        className="w-full md:w-96 rounded-full hover:rotate-[5deg] duration-300 hover:border-8 border-designColor hover:bg-cyan-300 shadow-2xl hover:shadow-designColor border-4"
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8, delay: 0.6 }}
-      />
+      
+     
+      
     </Container>
   );
 };
