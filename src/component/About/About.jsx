@@ -14,12 +14,12 @@ const About = () => {
       }
       
     >
-      <div className="md:w-2/3 md:pr-8">
-        <h1 className="text-xl lg:text-2xl font-semibold text-lightColor mb-3">
+      <div className=" md:pr-8">
+        <h1 className="text-xl lg:text-3xl font-semibold text-lightColor mb-3">
           <span className="mr-2 text-designColor">01.</span> About me
           ______________
         </h1>
-        <p className="text-lightColor mb-4">
+        <p className="text-lightColor text-2xl mb-4">
           I am a Junior Backend Developer with a strong foundation in HTML,
           CSS, and Node.js. I specialize in creating interactive and
           user-friendly web applications, and I'm currently expanding my skills
@@ -28,7 +28,7 @@ const About = () => {
           integrate various libraries to enhance functionality. I stay updated
           with industry trends to deliver modern, cutting-edge solutions.
         </p>
-        <p className="text-lightColor mb-4">
+        <p className="text-lightColor text-2xl mb-4">
           Fast-forward to today, and I had the privilege of working at an
           advertising agency, a start-up, a huge corporation, and a student-led
           design studio. Lorem ipsum dolor sit amet consectetur adipisicing
