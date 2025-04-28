@@ -36,13 +36,13 @@ const SkillsCard = () => {
     { icon: FaCss3Alt, name: "CSS", level: "80%" },
     { icon: MdJavascript, name: "JavaScript", level: "80%" },
     { icon: SiTailwindcss, name: "TailwindCSS", level: "85%" },
-    { icon: FaReact, name: "React JS", level: "50%" },
+    { icon: FaReact, name: "React JS", level: "75%" },
     { icon: SiFirebase, name: "MySql", level: "85%" },
     { icon: SiVercel, name: "Vercel", level: "50%" },
     { icon: FaNode, name: "Node JS", level: "85%" },
     { icon: SiExpress, name: "Express JS", level: "80%" },
     { icon: SiMongodb, name: "MongoDB", level: "85%" },
-    { icon: SiReact, name: "ReactNative", level: "60%" },
+    { icon: SiReact, name: "ReactNative", level: "70%" },
     { icon: SiNextdotjs , name: "Next", level: "60%" },
   ];
 
