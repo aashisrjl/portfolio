@@ -1,25 +1,46 @@
 /** @type {import('tailwindcss').Config} */
-import daisyui from "daisyui"
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        primaryColor: "#0A192F",
-        designColor: "#64ffda",
-        lightColor: "#ccd6f6",
-        darktext: "#8892b0",
-        hovarColor: "#64FFDA",
+        gray: {
+          50: '#f9fafb',
+          100: '#f3f4f6',
+          200: '#e5e7eb',
+          300: '#d1d5db',
+          400: '#9ca3af',
+          500: '#6b7280',
+          600: '#4b5563',
+          700: '#374151',
+          800: '#1f2937',
+          900: '#111827',
+        },
       },
-      fontFamily:  {
-        bodyFont: ["Montserrat", "sans-serif"],
+      animation: {
+        'fade-in': 'fadeIn 0.5s ease-in-out',
+        'slide-up': 'slideUp 0.5s ease-out',
+        'scale-in': 'scaleIn 0.3s ease-out',
       },
-      backgroundImage: {
-        "banner-bg": "url('/public/bannerBg.jpg')",
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        scaleIn: {
+          '0%': { transform: 'scale(0.95)', opacity: '0' },
+          '100%': { transform: 'scale(1)', opacity: '1' },
+        },
+      },
+      backdropBlur: {
+        xs: '2px',
       },
     },
   },
-  plugins: [daisyui],
+  plugins: [],
 };
-
