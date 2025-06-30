@@ -189,7 +189,7 @@ const Skills = () => {
     {
       title: 'Backend Developer',
       company: 'Freelance',
-      duration: 'Jan 2024 - Present',
+      duration: 'Jan 2025 - Present',
       location: 'Remote',
       type: 'Freelance',
       description: 'Developing scalable web applications using Node.js, Express.js, and modern databases. Working with clients to build custom solutions and APIs.',
@@ -198,7 +198,7 @@ const Skills = () => {
     {
       title: 'Full Stack Developer',
       company: 'Personal Projects',
-      duration: 'Jun 2023 - Dec 2023',
+      duration: 'Jan 2024 - Present',
       location: 'Nepal',
       type: 'Self-employed',
       description: 'Built various web applications including e-commerce platforms, real-time chat applications, and portfolio websites. Focused on learning modern web technologies.',
@@ -207,7 +207,7 @@ const Skills = () => {
     {
       title: 'Junior Developer',
       company: 'Learning Phase',
-      duration: 'Jan 2023 - May 2023',
+      duration: 'Jan 2023 - Dec 2024',
       location: 'Nepal',
       type: 'Education',
       description: 'Intensive learning period focusing on backend development fundamentals, database design, and web development best practices.',
@@ -366,13 +366,13 @@ const Skills = () => {
                       ></div>
                     </div>
                   </div>
-                  <div className="ml-6">
+                  {/* <div className="ml-6">
                     {!skill.verified && (
                       <button className="text-gray-400 border border-gray-600 px-3 py-1 rounded-lg text-sm font-medium hover:bg-gray-700 transition-all duration-200">
                         Take Assessment
                       </button>
                     )}
-                  </div>
+                  </div> */}
                 </div>
               ))}
             </div>

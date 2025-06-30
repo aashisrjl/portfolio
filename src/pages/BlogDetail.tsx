@@ -166,7 +166,7 @@ const BlogDetail = () => {
 
               {/* Blog Content */}
               <div 
-                className="prose prose-lg max-w-none prose-headings:text-white prose-p:text-gray-300 prose-strong:text-white prose-ul:text-gray-300 prose-li:text-gray-300 prose-code:text-blue-400 prose-code:bg-blue-900/30 prose-pre:bg-gray-900 prose-pre:text-gray-100"
+                className=""
                 dangerouslySetInnerHTML={{ __html: blog.content }}
               />
             </div>
