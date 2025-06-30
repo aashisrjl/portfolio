@@ -1,8 +1,10 @@
 export const blogData = [
   {
     id: 1,
-    title: 'Building Scalable Node.js Applications: Best Practices and Architecture Patterns',
-    excerpt: 'Learn how to structure your Node.js applications for maximum scalability and maintainability. We\'ll explore microservices, clean architecture, and performance optimization techniques.',
+    title:
+      "Building Scalable Node.js Applications: Best Practices and Architecture Patterns",
+    excerpt:
+      "Learn how to structure your Node.js applications for maximum scalability and maintainability. We'll explore microservices, clean architecture, and performance optimization techniques.",
     content: `
       <h2>Introduction</h2>
       <p>Building scalable Node.js applications requires careful planning and adherence to proven architectural patterns. In this comprehensive guide, we'll explore the essential practices that will help you create robust, maintainable, and scalable backend systems.</p>
@@ -129,19 +131,21 @@ process.on('SIGTERM', () => {
       
       <p>Remember that premature optimization is the root of all evil. Focus on writing clean, maintainable code first, then optimize the bottlenecks you identify through profiling and monitoring.</p>
     `,
-    author: 'Aashish Rijal',
-    date: '2025-01-15',
-    readTime: '8 min read',
-    image: 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800',
-    tags: ['Node.js', 'Architecture', 'Scalability', 'Backend'],
+    author: "Aashish Rijal",
+    date: "2025-01-15",
+    readTime: "8 min read",
+    image:
+      "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800",
+    tags: ["Node.js", "Architecture", "Scalability", "Backend"],
     likes: 42,
-    comments: 12,
-    views: 1250
+    comments: 0,
+    views: 10,
   },
   {
     id: 2,
-    title: 'Modern Authentication Strategies: JWT vs Sessions in 2025',
-    excerpt: 'A deep dive into authentication methods, comparing JWT tokens with traditional sessions. Learn when to use each approach and implement secure authentication systems.',
+    title: "Modern Authentication Strategies: JWT vs Sessions in 2025",
+    excerpt:
+      "A deep dive into authentication methods, comparing JWT tokens with traditional sessions. Learn when to use each approach and implement secure authentication systems.",
     content: `
       <h2>Authentication in Modern Web Applications</h2>
       <p>Authentication is a critical component of any web application. In this article, we'll compare two popular authentication strategies: JSON Web Tokens (JWT) and traditional session-based authentication, helping you choose the right approach for your application.</p>
@@ -373,19 +377,21 @@ const requireAuth = (req, res, next) => {
       
       <p>Remember that security should always be your top priority. Regardless of which approach you choose, implement proper validation, use HTTPS, and follow security best practices to protect your users and application.</p>
     `,
-    author: 'Aashish Rijal',
-    date: '2025-01-10',
-    readTime: '6 min read',
-    image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800',
-    tags: ['Authentication', 'JWT', 'Security', 'Backend'],
+    author: "Aashish Rijal",
+    date: "2025-01-10",
+    readTime: "6 min read",
+    image:
+      "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800",
+    tags: ["Authentication", "JWT", "Security", "Backend"],
     likes: 38,
     comments: 8,
-    views: 980
+    views: 980,
   },
   {
     id: 3,
-    title: 'Database Design Patterns for High-Performance Applications',
-    excerpt: 'Explore advanced database design patterns, indexing strategies, and optimization techniques for building high-performance applications with MongoDB and MySQL.',
+    title: "Database Design Patterns for High-Performance Applications",
+    excerpt:
+      "Explore advanced database design patterns, indexing strategies, and optimization techniques for building high-performance applications with MongoDB and MySQL.",
     content: `
       <h2>Database Design for Performance</h2>
       <p>Proper database design is the foundation of high-performance applications. This comprehensive guide covers essential patterns, optimization techniques, and best practices for both SQL and NoSQL databases, helping you build systems that scale efficiently.</p>
@@ -780,19 +786,21 @@ const performanceMiddleware = (req, res, next) => {
       
       <p>Remember that the best database design depends on your specific use case, query patterns, and scalability requirements. Use the patterns and techniques outlined in this guide as a foundation, but always test and optimize based on your application's real-world usage patterns.</p>
     `,
-    author: 'Aashish Rijal',
-    date: '2025-01-05',
-    readTime: '10 min read',
-    image: 'https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=800',
-    tags: ['Database', 'MongoDB', 'MySQL', 'Performance'],
+    author: "Aashish Rijal",
+    date: "2025-01-05",
+    readTime: "10 min read",
+    image:
+      "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=800",
+    tags: ["Database", "MongoDB", "MySQL", "Performance"],
     likes: 56,
     comments: 15,
-    views: 1420
+    views: 1420,
   },
   {
     id: 4,
-    title: 'Building Real-time Applications with Socket.io and Node.js',
-    excerpt: 'Learn how to create real-time applications using Socket.io. We\'ll build a chat application and explore advanced features like rooms, namespaces, and scaling.',
+    title: "Building Real-time Applications with Socket.io and Node.js",
+    excerpt:
+      "Learn how to create real-time applications using Socket.io. We'll build a chat application and explore advanced features like rooms, namespaces, and scaling.",
     content: `
       <h2>Real-time Communication with Socket.io</h2>
       <p>Socket.io enables real-time, bidirectional communication between clients and servers, making it perfect for building interactive applications like chat systems, live updates, collaborative tools, and real-time dashboards. This comprehensive guide will take you through building production-ready real-time applications.</p>
@@ -1391,13 +1399,14 @@ socket.on('send_message', (data) => {
       
       <p>The key to successful real-time applications is balancing functionality with performance, ensuring that your application remains responsive and reliable even under high load.</p>
     `,
-    author: 'Aashish Rijal',
-    date: '2024-12-28',
-    readTime: '12 min read',
-    image: 'https://images.pexels.com/photos/1591056/pexels-photo-1591056.jpeg?auto=compress&cs=tinysrgb&w=800',
-    tags: ['Socket.io', 'Real-time', 'Node.js', 'Chat'],
+    author: "Aashish Rijal",
+    date: "2024-12-28",
+    readTime: "12 min read",
+    image:
+      "https://images.pexels.com/photos/1591056/pexels-photo-1591056.jpeg?auto=compress&cs=tinysrgb&w=800",
+    tags: ["Socket.io", "Real-time", "Node.js", "Chat"],
     likes: 73,
     comments: 22,
-    views: 1890
-  }
+    views: 1890,
+  },
 ];

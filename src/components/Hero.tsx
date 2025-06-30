@@ -207,7 +207,7 @@ const Hero = () => {
                     <div className="flex flex-wrap items-center gap-4 text-sm text-gray-400 mb-4">
                       <span className="flex items-center space-x-1">
                         <MapPin size={16} />
-                        <span>Nepal</span>
+                        <span>Kathmandu,Nepal</span>
                       </span>
                       <span className="flex items-center space-x-1">
                         <Calendar size={16} />
@@ -234,7 +234,12 @@ const Hero = () => {
                     >
                       Projects
                     </button>
-                    <button className="border border-gray-600 text-gray-300 px-4 py-2 rounded-lg hover:bg-gray-700 transition-all duration-200">
+                    <button className="border border-gray-600 text-gray-300 px-4 py-2 rounded-lg hover:bg-gray-700 transition-all duration-200"
+                    //onclick directly send mesage to whatsapp
+                    onClick={()=>{
+                      scrollToSection('contact')
+                    }}
+                    >
                       More
                     </button>
                   </div>
@@ -244,19 +249,19 @@ const Hero = () => {
 
             {/* Quick Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 pt-6 border-t border-gray-700">
-              <div className="text-center p-4 hover:bg-gray-700 rounded-lg transition-all duration-200 cursor-pointer">
+              <div className="text-center p-4 hover:bg-gray-700 rounded-lg transition-all duration-200 cursor-pointer" onClick={()=>{scrollToSection('projects')}}>
                 <div className="text-2xl font-bold text-blue-400">13+</div>
                 <div className="text-sm text-gray-400">Projects</div>
               </div>
-              <div className="text-center p-4 hover:bg-gray-700 rounded-lg transition-all duration-200 cursor-pointer">
+              <div className="text-center p-4 hover:bg-gray-700 rounded-lg transition-all duration-200 cursor-pointer" onClick={()=>{scrollToSection('skills')}}>
                 <div className="text-2xl font-bold text-green-400">8+</div>
                 <div className="text-sm text-gray-400">Technologies</div>
               </div>
-              <div className="text-center p-4 hover:bg-gray-700 rounded-lg transition-all duration-200 cursor-pointer">
+              <div className="text-center p-4 hover:bg-gray-700 rounded-lg transition-all duration-200 cursor-pointer" onClick={()=>{scrollToSection('skills')}}>
                 <div className="text-2xl font-bold text-purple-400">1+</div>
                 <div className="text-sm text-gray-400">Years Exp.</div>
               </div>
-              <div className="text-center p-4 hover:bg-gray-700 rounded-lg transition-all duration-200 cursor-pointer">
+              <div className="text-center p-4 hover:bg-gray-700 rounded-lg transition-all duration-200 cursor-pointer" onClick={()=>{window.location.href='/blogs'}}>
                 <div className="text-2xl font-bold text-orange-400">4</div>
                 <div className="text-sm text-gray-400">Articles</div>
               </div>
