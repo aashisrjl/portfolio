@@ -64,7 +64,7 @@ const About = () => {
             <div className="space-y-6">
               <div>
                 <p className="text-gray-300 leading-relaxed text-lg mb-4">
-                  I am a Junior Backend Developer with a strong foundation in HTML, CSS, and Node.js. 
+                  I am a Backend Developer with a strong foundation in Node.js. 
                   I specialize in creating interactive and user-friendly web applications, and I'm currently 
                   expanding my skills in Next.js and TypeScript.
                 </p>
