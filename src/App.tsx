@@ -5,11 +5,13 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import BlogList from './pages/BlogList';
 import BlogDetail from './pages/BlogDetail';
+import AnalyticsTracker from './data/AnalyticsTracker';
 
 function App() {
   return (
     <Router>
       <div className="min-h-screen bg-gray-900 text-white">
+        <AnalyticsTracker />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
