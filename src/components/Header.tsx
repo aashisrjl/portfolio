@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, User, Code, Briefcase, Mail, Download, BookOpen } from 'lucide-react';
+import { Menu, X, Home, User, Code, Briefcase, Mail, Download,Book, BookOpen } from 'lucide-react';
 import logo from '../assets/namelogo.png';
 import resume from '../assets/AASHISH_CV.pdf'; // Adjust the path to your resume file
 
@@ -16,6 +16,7 @@ const Header = () => {
     { id: 'projects', label: 'Projects', icon: Briefcase, path: '/#projects' },
     { id: 'blogs', label: 'Articles', icon: BookOpen, path: '/blogs' },
     { id: 'contact', label: 'Contact', icon: Mail, path: '/#contact' },
+    { id: 'csit', label: 'CSIT', icon:Book , path: '/csit' }
   ];
 
   useEffect(() => {
