@@ -111,7 +111,7 @@ const Projects = () => {
       image: '/project/allfootsalraw.jpg',
       technologies: ['React.js', 'Node.js', 'Mysql','Express','Redis','Docker'],
       category: 'fullstack',
-      liveLink: '#',
+      liveLink: 'https://allfutsal.app',
       githubLink: 'https://github.com/aashisrjl/footsal',
       featured: true
     },{
