@@ -103,10 +103,36 @@ const Projects = () => {
       liveLink: '#',
       githubLink: 'https://github.com/aashisrjl',
       featured: true
+    },
+    {
+      id: 10,
+      title: 'SaaS-Futsal Booking and Management System',
+      description: 'A SaaS-based futsal booking and management system for players and futsal clubs with features for scheduling, payments, and user management.',
+      image: 'https://images.pexels.com/photos/1591056/pexels-photo-1591056.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['React.js', 'Node.js', 'Mysql','Express','Redis','Docker'],
+      category: 'fullstack',
+      liveLink: '#',
+      githubLink: 'https://github.com/aashisrjl/footsal',
+      featured: true
+    },{
+      id: 11,
+      title: 'Attendence System using Face Detection',
+      description: 'The Attendence using face detection by training the model by photos using LPBHF recognizer model and haarcascade',
+      image: 'https://images.pexels.com/photos/1591056/pexels-photo-1591056.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['Python', 'OpenCV', 'Face Recognition', 'Machine Learning'],
+      category: 'ai/ml',
+      liveLink: '#',
+      githubLink: 'https://github.com/aashisrjl/Attendence_FaceRecognization_LPBHF_Recognizer'
     }
   ];
 
   const otherProjects = [
+    {
+      title: 'ETL Pipeline',
+      description: 'Extract, Transform, Load (ETL) pipeline for data processing and analysis',
+      technologies: ['Python', 'Pandas', 'PostgreSQL', 'numpy']
+
+    },
     {
       title: 'Portfolio Management',
       description: 'Can create a new portfolio of new user by filling the form',
@@ -144,7 +170,8 @@ const Projects = () => {
     { id: 'fullstack', label: 'Full Stack', icon: Code },
     { id: 'frontend', label: 'Frontend', icon: Globe },
     { id: 'backend', label: 'Backend', icon: Database },
-    { id: 'mobile', label: 'Mobile', icon: Smartphone }
+    { id: 'mobile', label: 'Mobile', icon: Smartphone },
+    { id: 'ai/ml', label: 'AI/ML', icon: Filter }
   ];
 
   const filteredProjects = filter === 'all' 

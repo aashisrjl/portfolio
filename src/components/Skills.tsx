@@ -9,7 +9,8 @@ const Skills = () => {
     { id: 'backend', label: 'Backend', count: 11 },
     { id: 'frontend', label: 'Frontend', count: 5 },
     { id: 'database', label: 'Database', count: 4 },
-    { id: 'devops', label: 'DevOps', count: 3 }
+    { id: 'devops', label: 'DevOps', count: 3 },
+    { id: 'ai/ml', label: 'AI/ML', count: 5 }
   ];
 
   var skills = [
@@ -180,7 +181,55 @@ const Skills = () => {
       verified: false,
       assessmentScore: null
     },
- 
+    {
+      name: 'Redis',
+      level: 40,
+      endorsements: 5,
+      category: 'database',
+      verified: false,
+      assessmentScore: null
+    },
+    //ai/ml
+    {
+      name: 'numpy',
+      level: 30,
+      endorsements: 0,
+      category: 'ai/ml',
+      verified: false,
+      assessmentScore: null
+    },
+    {
+      name: 'pandas',
+      level: 30,
+      endorsements: 0,
+      category: 'ai/ml',
+      verified: false,
+      assessmentScore: null
+    },
+      {
+      name: 'scikit-learn',
+      level: 20,
+      endorsements: 0,
+      category: 'ai/ml',
+      verified: false,
+      assessmentScore: null
+    },
+      {
+        name: 'matplotlib',
+        level: 20,
+        endorsements: 0,
+        category: 'ai/ml',
+        verified: false,
+        assessmentScore: null
+      },
+      {
+        name: 'openCv',
+        level: 20,
+        endorsements: 0,
+        category: 'ai/ml',
+        verified: false,
+        assessmentScore: null
+      }
 
     
   ];
