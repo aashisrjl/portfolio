@@ -183,7 +183,7 @@ const Skills = () => {
     },
     {
       name: 'Redis',
-      level: 40,
+      level: 50,
       endorsements: 5,
       category: 'database',
       verified: false,
@@ -192,7 +192,7 @@ const Skills = () => {
     //ai/ml
     {
       name: 'numpy',
-      level: 30,
+      level: 60,
       endorsements: 0,
       category: 'ai/ml',
       verified: false,
@@ -200,7 +200,7 @@ const Skills = () => {
     },
     {
       name: 'pandas',
-      level: 30,
+      level: 50,
       endorsements: 0,
       category: 'ai/ml',
       verified: false,
@@ -208,7 +208,7 @@ const Skills = () => {
     },
       {
       name: 'scikit-learn',
-      level: 20,
+      level: 40,
       endorsements: 0,
       category: 'ai/ml',
       verified: false,
@@ -216,7 +216,7 @@ const Skills = () => {
     },
       {
         name: 'matplotlib',
-        level: 20,
+        level: 60,
         endorsements: 0,
         category: 'ai/ml',
         verified: false,
@@ -224,7 +224,7 @@ const Skills = () => {
       },
       {
         name: 'openCv',
-        level: 20,
+        level: 70,
         endorsements: 0,
         category: 'ai/ml',
         verified: false,
