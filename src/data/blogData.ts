@@ -1408,4 +1408,442 @@ socket.on('send_message', (data) => {
     comments: 22,
     views: 1890,
   },
+  {
+    id: 5,
+    title:
+      "How I Implemented Automatic API Documentation in My Node.js Backend Using Swagger",
+    excerpt:
+      "A practical guide to integrating Swagger with Node.js and Express using OpenAPI and swagger-autogen for automatic, interactive API documentation.",
+    content: `
+      <h2>Introduction</h2>
+      <p>When building scalable backend systems, documentation is not optional — it is essential.</p>
+      <p>While working on my SaaS-based platform backend (built with Node.js + Express), I needed a clean and professional way to document all APIs without manually maintaining separate documentation files.</p>
+      <p>That is when I implemented Swagger using OpenAPI. In this article, I explain how I integrated automatic API documentation into my Node.js project.</p>
+
+      <h2>Why API Documentation Matters</h2>
+      <p>In real-world applications, frontend developers depend on backend documentation, teams need clarity on request/response structures, and APIs should be testable without relying on Postman all the time.</p>
+      <p>Swagger solves this by providing interactive API docs, built-in endpoint testing, clean endpoint grouping, and authentication support.</p>
+
+      <h2>Technologies Used</h2>
+      <ul>
+        <li>Node.js</li>
+        <li>Express.js</li>
+        <li>OpenAPI 3.0</li>
+        <li>Swagger UI</li>
+        <li>swagger-autogen</li>
+      </ul>
+
+      <h2>Step 1: Install Required Packages</h2>
+      <pre><code>
+npm install swagger-ui-express swagger-autogen
+      </code></pre>
+
+      <h2>Step 2: Create Swagger Configuration File</h2>
+      <p>Create a file called <strong>swagger.js</strong> and add:</p>
+      <pre><code>
+const swaggerAutogen = require('swagger-autogen')();
+
+const doc = {
+  info: {
+    title: 'Futsal Booking API',
+    description: 'Automatic API documentation using Swagger',
+  },
+  host: 'localhost:5000',
+  schemes: ['http'],
+  tags: [
+    { name: 'Auth', description: 'Authentication APIs' },
+    { name: 'Users', description: 'User management APIs' },
+    { name: 'Futsal', description: 'Futsal management APIs' },
+    { name: 'Booking', description: 'Booking APIs' }
+  ]
+};
+
+const outputFile = './swagger-output.json';
+const endpointsFiles = ['./app.js'];
+
+swaggerAutogen(outputFile, endpointsFiles, doc);
+      </code></pre>
+
+      <h2>Step 3: Connect Swagger UI in app.js</h2>
+      <pre><code>
+const swaggerUi = require('swagger-ui-express');
+const swaggerFile = require('./swagger-output.json');
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
+      </code></pre>
+      <p>Run:</p>
+      <pre><code>
+npm run swagger
+npm start
+      </code></pre>
+      <p>Then visit: <strong>http://localhost:3000/api-docs</strong></p>
+
+      <h2>Step 4: Organizing Routes with Tags</h2>
+      <p>To group routes properly in Swagger UI, add route-level tags:</p>
+      <pre><code>
+// #swagger.tags = ['Auth']
+// #swagger.tags = ['Booking']
+      </code></pre>
+
+      <h2>Adding JWT Authorization</h2>
+      <p>To support secured endpoints:</p>
+      <pre><code>
+securityDefinitions: {
+  BearerAuth: {
+    type: 'apiKey',
+    in: 'header',
+    name: 'Authorization',
+    description: 'Enter JWT token like: Bearer &lt;token&gt;',
+  },
+}
+      </code></pre>
+      <p>This adds an <strong>Authorize</strong> button in Swagger UI for protected routes.</p>
+
+      <h2>Key Benefits I Experienced</h2>
+      <ul>
+        <li>No need to manually maintain API documentation</li>
+        <li>Clean grouping of endpoints</li>
+        <li>Easy testing for frontend collaboration</li>
+        <li>Professional presentation for academic projects</li>
+        <li>Faster debugging workflow</li>
+      </ul>
+
+      <h2>Lessons Learned</h2>
+      <ul>
+        <li>Automatic documentation saves development time.</li>
+        <li>Organizing APIs with versioning like <strong>/api/v1/</strong> improves scalability.</li>
+        <li>Documentation should grow with the project, not remain an afterthought.</li>
+      </ul>
+
+      <h2>Final Thoughts</h2>
+      <p>Implementing Swagger significantly improved the professionalism of my backend architecture.</p>
+      <p>If you are building a SaaS platform, final year project, production REST API, or a team backend, integrating Swagger early helps your backend become self-documented, testable, and presentation-ready.</p>
+    `,
+    author: "Aashis Rijal",
+    date: "2026-02-25",
+    readTime: "3 min read",
+    image:
+      "https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=800",
+    tags: ["Nodejs", "Swagger", "API", "Documentation"],
+    likes: 0,
+    comments: 0,
+    views: 0,
+  },
+  {
+    id: 6,
+    title:
+      "Getting Started with AdminJS: Build a Powerful Admin Panel for Your Node.js App",
+    excerpt:
+      "Learn how to quickly integrate AdminJS with Express and Sequelize to generate a secure, customizable admin dashboard with CRUD, filtering, and authentication.",
+    content: `
+      <h2>Introduction</h2>
+      <p>Building an admin panel is a common requirement in backend development. Whether you are managing users, products, blog posts, or internal data, creating an admin dashboard from scratch can be time-consuming.</p>
+      <p>AdminJS is an open-source framework that automatically generates a modern, customizable admin panel for your Node.js application.</p>
+      <p>In this article, we explore what AdminJS is, why it is useful, and how to integrate it into an Express + Sequelize project.</p>
+
+      <h2>What is AdminJS?</h2>
+      <p>AdminJS is a backend framework for building admin panels in Node.js applications. It connects directly to your database models and generates a UI with full CRUD (Create, Read, Update, Delete) functionality.</p>
+
+      <h3>It Supports</h3>
+      <ul>
+        <li>Express</li>
+        <li>Fastify</li>
+        <li>NestJS</li>
+        <li>Sequelize</li>
+        <li>Mongoose</li>
+        <li>Prisma</li>
+        <li>TypeORM</li>
+      </ul>
+
+      <h3>With Minimal Configuration You Get</h3>
+      <ul>
+        <li>Automatic CRUD interfaces</li>
+        <li>Filtering and sorting</li>
+        <li>Pagination</li>
+        <li>Relationship management</li>
+        <li>Authentication support</li>
+        <li>Customizable dashboard</li>
+      </ul>
+
+      <h2>Why Use AdminJS?</h2>
+      <h3>1) Save Development Time</h3>
+      <p>Building an admin dashboard manually requires routes, controllers, views, validation, and security. AdminJS eliminates most of this boilerplate.</p>
+
+      <h3>2) Clean, Modern UI</h3>
+      <p>AdminJS provides a responsive and well-designed interface out of the box.</p>
+
+      <h3>3) Highly Customizable</h3>
+      <p>You can control visible fields, editable properties, custom actions, field labels, layout design, and access permissions.</p>
+
+      <h3>4) Works with Existing Models</h3>
+      <p>If you are already using Sequelize or Mongoose, AdminJS integrates directly with your existing models.</p>
+
+      <h2>Installation (Express + Sequelize Example)</h2>
+      <p>If you already have a Node.js project, Express configured, and Sequelize connected to your database, follow these steps:</p>
+
+      <h3>Step 1: Install Dependencies</h3>
+      <pre><code>
+npm install adminjs @adminjs/express @adminjs/sequelize
+      </code></pre>
+
+      <h3>Step 2: Register the Sequelize Adapter</h3>
+      <pre><code>
+const AdminJS = require('adminjs')
+const AdminJSExpress = require('@adminjs/express')
+const AdminJSSequelize = require('@adminjs/sequelize')
+
+AdminJS.registerAdapter(AdminJSSequelize)
+      </code></pre>
+
+      <h3>Step 3: Configure AdminJS</h3>
+      <pre><code>
+const admin = new AdminJS({
+  resources: [User, Product],
+  rootPath: '/admin',
+})
+      </code></pre>
+
+      <h3>Step 4: Build and Mount the Router</h3>
+      <pre><code>
+const router = AdminJSExpress.buildRouter(admin)
+app.use(admin.options.rootPath, router)
+      </code></pre>
+      <p>Start your server and visit: <strong>http://localhost:3000/admin</strong></p>
+      <p>Your admin panel is ready.</p>
+
+      <h2>Securing the Admin Panel (Authentication)</h2>
+      <p>An admin panel should never be publicly accessible without protection.</p>
+      <pre><code>
+const router = AdminJSExpress.buildAuthenticatedRouter(
+  admin,
+  {
+    authenticate: async (email, password) =&gt; {
+      if (email === 'admin@example.com' && password === 'securePassword') {
+        return { email }
+      }
+      return null
+    },
+    cookieName: 'adminjs',
+    cookiePassword: 'sessionsecret',
+  },
+  null,
+  {
+    resave: false,
+    saveUninitialized: true,
+  }
+)
+      </code></pre>
+
+      <h2>Customizing Resources</h2>
+      <p>AdminJS allows you to customize how models appear in the panel:</p>
+      <pre><code>
+const admin = new AdminJS({
+  resources: [
+    {
+      resource: User,
+      options: {
+        listProperties: ['id', 'name', 'email'],
+        editProperties: ['name', 'email'],
+        filterProperties: ['email'],
+      },
+    },
+  ],
+})
+      </code></pre>
+      <p>You can also hide sensitive fields like passwords, add custom validation, create custom actions, and improve labels for readability.</p>
+
+      <h2>Adding a Custom Dashboard</h2>
+      <pre><code>
+const admin = new AdminJS({
+  dashboard: {
+    component: AdminJS.bundle('./components/Dashboard'),
+  },
+})
+      </code></pre>
+      <p>This is useful for statistics, charts, custom analytics, summary cards, and other internal insights.</p>
+
+      <h2>Advanced Capabilities</h2>
+      <ul>
+        <li>Role-based access control</li>
+        <li>Custom React components</li>
+        <li>File uploads (local or cloud storage)</li>
+        <li>Action hooks (before/after operations)</li>
+        <li>Multiple resources</li>
+        <li>Multi-database setups</li>
+      </ul>
+
+      <h2>Final Thoughts</h2>
+      <p>AdminJS is an excellent solution when you need a fast, secure, and customizable admin panel for a Node.js application.</p>
+      <p>Instead of spending days building internal dashboards, you can integrate AdminJS in minutes and focus on developing your core application logic.</p>
+      <p>If you are working with Node.js and relational or NoSQL databases, AdminJS is definitely worth exploring.</p>
+      <p>Thank you!</p>
+    `,
+    author: "Aashis Rijal",
+    date: "2026-02-20",
+    readTime: "3 min read",
+    image:
+      "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800",
+    tags: ["Adminjs", "Nodejs", "Reactjs", "Aashis"],
+    likes: 0,
+    comments: 0,
+    views: 0,
+  },
+  {
+    id: 7,
+    title:
+      "Send Emails from a Static Website for FREE using EmailJS (No Backend Needed)",
+    excerpt:
+      "Learn how to build a working contact form on a static website using EmailJS with zero backend setup and a free monthly email quota.",
+    content: `
+      <h2>Introduction</h2>
+      <p>If you have a static website or portfolio and want a working contact form without paying for servers or writing backend code, EmailJS is one of the easiest and best solutions.</p>
+
+      <h2>Why EmailJS?</h2>
+      <p>EmailJS lets you send emails directly from JavaScript using third-party email services like Gmail, Outlook, and others.</p>
+
+      <h3>Advantages</h3>
+      <ul>
+        <li>No backend required</li>
+        <li>Works on static sites (HTML/CSS/JS)</li>
+        <li>Free plan available</li>
+        <li>Easy to integrate</li>
+        <li>Perfect for portfolios and personal websites</li>
+      </ul>
+
+      <h2>What You Need</h2>
+      <ul>
+        <li>A static website (HTML, CSS, JavaScript)</li>
+        <li>An EmailJS account</li>
+        <li>10–15 minutes</li>
+      </ul>
+
+      <h2>Step 1: Create an EmailJS Account</h2>
+      <ul>
+        <li>Go to <strong>https://www.emailjs.com</strong></li>
+        <li>Sign up using your email or Google</li>
+        <li>Verify your email address</li>
+      </ul>
+
+      <h2>Step 2: Add an Email Service</h2>
+      <ul>
+        <li>Go to Email Services</li>
+        <li>Click Add New Service</li>
+        <li>Choose Gmail (or any provider)</li>
+        <li>Connect your email account</li>
+      </ul>
+      <p>This email will receive messages from your contact form.</p>
+
+      <h2>Step 3: Create an Email Template</h2>
+      <ul>
+        <li>Go to Email Templates</li>
+        <li>Click Create New Template</li>
+        <li>Use a template like:</li>
+      </ul>
+      <pre><code>
+Subject:
+New Contact Message from {{name}}
+
+Content:
+Name: {{name}}
+Email: {{email}}
+
+Message:
+{{message}}
+      </code></pre>
+      <p>Save the template and copy the <strong>Template ID</strong>.</p>
+
+      <h2>Step 4: Get Your Public Key</h2>
+      <p>Go to Account → API Keys and copy your public key.</p>
+      <p>You will need these three values:</p>
+      <ul>
+        <li>Service ID</li>
+        <li>Template ID</li>
+        <li>Public Key</li>
+      </ul>
+
+      <h2>Step 5: HTML Contact Form</h2>
+      <pre><code>
+&lt;form onsubmit="sendMail(event)"&gt;
+  &lt;input type="text" name="name" placeholder="Your Name" required /&gt;
+  &lt;input type="email" name="email" placeholder="Your Email" required /&gt;
+  &lt;textarea name="message" placeholder="Your Message" required&gt;&lt;/textarea&gt;
+  &lt;button type="submit"&gt;Send Message&lt;/button&gt;
+&lt;/form&gt;
+      </code></pre>
+
+      <h2>Step 6: Add EmailJS Script</h2>
+      <p>Add this before the closing <strong>&lt;/body&gt;</strong> tag:</p>
+      <pre><code>
+&lt;script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  (function () {
+    emailjs.init("YOUR_PUBLIC_KEY");
+  })();
+&lt;/script&gt;
+      </code></pre>
+
+      <h2>Step 7: JavaScript Function to Send Email</h2>
+      <pre><code>
+&lt;script&gt;
+  function sendMail(event) {
+    event.preventDefault();
+    emailjs
+      .sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        event.target
+      )
+      .then(
+        function () {
+          alert("Message sent successfully!");
+          event.target.reset();
+        },
+        function (error) {
+          alert("Failed to send message");
+          console.error(error);
+        }
+      );
+  }
+&lt;/script&gt;
+      </code></pre>
+
+      <p>Replace:</p>
+      <ul>
+        <li>YOUR_PUBLIC_KEY</li>
+        <li>YOUR_SERVICE_ID</li>
+        <li>YOUR_TEMPLATE_ID</li>
+      </ul>
+
+      <h2>That’s It</h2>
+      <p>Your static website can now send emails without backend, without hosting costs, and without payment.</p>
+
+      <h2>Free Plan Limitations</h2>
+      <ul>
+        <li>200 emails per month</li>
+        <li>Suitable for portfolios and small projects</li>
+      </ul>
+      <p>For most personal sites, this is more than enough.</p>
+
+      <h2>When Should You NOT Use EmailJS?</h2>
+      <ul>
+        <li>High-traffic applications</li>
+        <li>Sensitive data (banking, passwords)</li>
+        <li>Enterprise-level apps</li>
+      </ul>
+      <p>For portfolios and personal websites, EmailJS is a great fit.</p>
+
+      <h2>Final Thoughts</h2>
+      <p>If you are a student, beginner, or developer building a portfolio website, EmailJS saves time, money, and complexity.</p>
+      <p>Simple, fast, and free. Happy coding!</p>
+    `,
+    author: "Aashis Rijal",
+    date: "2026-02-03",
+    readTime: "3 min read",
+    image:
+      "https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=800",
+    tags: ["Nodejs", "Email", "Static Site", "Email Services", "Software Development"],
+    likes: 1,
+    comments: 0,
+    views: 0,
+  },
 ];
