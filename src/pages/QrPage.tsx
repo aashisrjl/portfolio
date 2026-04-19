@@ -119,7 +119,9 @@ const QrPage = () => {
             </form>
 
             <p className="mt-6 text-xs text-gray-500 text-center">
-              Hint: the password is set to 1234.
+              contact <a href="mailto:aashisrijal252@gmail.com" className="text-blue-400 hover:underline">
+                aashisrijal252@gmail.com
+              </a> for the password.
             </p>
           </div>
         ) : (
