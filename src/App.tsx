@@ -7,6 +7,7 @@ import BlogDetail from './pages/BlogDetail';
 import CSIT from './pages/CSIT';
 import Labs from './pages/Labs';
 import Notes from './pages/Notes';
+import QrPage from './pages/QrPage';
 import AnalyticsTracker from './data/AnalyticsTracker';
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
           <Route path="/blog/:id" element={<BlogDetail />} />
           <Route path='/csit' element={<CSIT />} />
           <Route path='/csit/labs' element={<Labs />} />
-           <Route path='/csit/notes' element={<Notes />} />
+          <Route path='/csit/notes' element={<Notes />} />
+          <Route path='/qr' element={<QrPage />} />
         </Routes>
         <Footer />
       </div>

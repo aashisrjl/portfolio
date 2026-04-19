@@ -50,6 +50,9 @@ const Header = () => {
     if (item.path === '/blogs') {
       return location.pathname.startsWith('/blog');
     }
+    if (item.path === '/csit') {
+      return location.pathname.startsWith('/csit');
+    }
     return false;
   };
 
